@@ -11,5 +11,13 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
     .state('postulacion', {
       url: '/postulacion',
       component: 'postulacion'
+    })
+    .state('formularioalu', {
+      url: '/formularioalumno',
+      component: 'formularioalu'
+    })
+    .state('panelprofesor', {
+      url: '/panelprofesor',
+      component: 'panelprofesor'
     });
 }
