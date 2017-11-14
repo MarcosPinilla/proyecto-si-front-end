@@ -47,3 +47,13 @@ md-icon {
   border-top: 1px solid #ccc; 
   margin-top: 20px;
 }
+
+.imagen {
+  height: 200px;
+  width: 200px;
+  border: 1px solid #ccc;
+}
+
+.textcolor {
+  color: #1a8eed;
+}
