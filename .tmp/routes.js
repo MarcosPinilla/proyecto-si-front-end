@@ -5,7 +5,7 @@ angular
 /** @ngInject */
 function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
   $locationProvider.html5Mode(true).hashPrefix('!');
-  $urlRouterProvider.otherwise('postulacion');
+  $urlRouterProvider.otherwise('login');
 
   $stateProvider
     .state('postulacion', {
@@ -23,5 +23,13 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
     .state('perfil', {
       url: '/perfil',
       component: 'perfil'
+    })
+    .state('login', {
+      url: '/login',
+      component: 'login'
+    })
+    .state('registro', {
+      url: '/registro',
+      component: 'registro'
     });
 }
