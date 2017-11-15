@@ -9,5 +9,18 @@
     controllerAs: 'vm'
   });
 
-  function sidebarCtr() {}
+  sidebarCtr.$inject = ['$localStorage', '$scope'];
+
+  function sidebarCtr($localStorage, $scope) {
+
+    var vm = this;
+
+    vm.vista = $localStorage.vista || false ;
+
+    $scope.$on('greeting', function ($event, message) {
+      vm.vista = message;
+    });
+
+    
+  }
 })();
