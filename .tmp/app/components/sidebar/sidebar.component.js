@@ -15,7 +15,7 @@
 
     var vm = this;
 
-    vm.vista = $localStorage.vista || false ;
+    vm.vista = false;
 
     $scope.$on('greeting', function ($event, message) {
       vm.vista = message;

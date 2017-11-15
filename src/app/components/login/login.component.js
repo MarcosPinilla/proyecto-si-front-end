@@ -14,7 +14,6 @@
   function loginCtrl($localStorage, $rootScope) {
     var vm = this;
     vm.cambio = function() {
-      $localStorage.vista = true;
       var message = true;
 
       $rootScope.$broadcast('greeting', message);
