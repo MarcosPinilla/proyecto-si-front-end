@@ -1,12 +1,12 @@
-<div layout="row" style="height: 100%;">
+<div layout="row" style="height: 100%;" >
   <md-sidenav flex="20"
-    class="md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" md-whiteframe="4">
+    class="md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" md-whiteframe="4" ng-if="vm.variablexd">
     <md-toolbar class="md-theme-indigo" md-colors="{background: 'Blue-600'}">
       <div layout="row" layout-align="center center">
         <img src="/assets/img/user.png" class="imag"></img>
         <div layout-padding layout="column">
           <div>
-            <h5>Daniel Coronado</h5>
+            <h5>Daniel Coronado {{ vm.variablexd }}</h5>
           </div>
         </div>
       </div>
@@ -37,7 +37,7 @@
     </div> 
   </md-sidenav>
   <div layout="column" flex="80" flex-xs="100" flex-md="100" flex-sm="100">
-    <md-toolbar class="md-hue-2 toolbar" md-colors="{background: 'Blue'}" layout="row"  style="height:50px">
+    <md-toolbar class="md-hue-2 toolbar" md-colors="{background: 'Blue'}" layout="row"  style="height:50px" ng-if="vm.variablexd">
       <div class="md-toolbar-tools">
         <md-button class="md-icon-button">
           <md-icon></md-icon>

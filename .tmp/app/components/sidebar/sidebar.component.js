@@ -9,5 +9,12 @@
     controllerAs: 'vm'
   });
 
-  function sidebarCtr() {}
+  sidebarCtr.$inject = ['$localStorage'];
+
+  function sidebarCtr($localStorage) {
+    var vm = this;
+
+    vm.variablexd = false || $localStorage.variable;
+
+  }
 })();
