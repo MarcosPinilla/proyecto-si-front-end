@@ -9,5 +9,15 @@
     controllerAs: 'vm'
   });
 
-  function registroCtrl() {}
+  registroCtrl.$inject = ['$localStorage', '$rootScope'];
+
+  function registroCtrl($localStorage, $rootScope) {
+    var vm = this;
+    vm.cambio = function() {
+      var message = true;
+
+      $rootScope.$broadcast('greeting', message);
+
+    }
+  }
 })();
